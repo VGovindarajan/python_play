@@ -10,13 +10,14 @@ def get_random_char():
     #print('gereandomchar', randomNum)
     return alphabets[randomNum]
 
-def get_random_monkey_string(count):
+
+def get_random_monkey_string(str_len):
     retval = ''
-    for i in range(0,count):
+    for i in range(0, str_len):
         ch = get_random_char()
         retval = retval+ch
-    if len(retval) != count :
-        raise ValueError("len is not equal")
+    if len(retval) != str_len:
+        raise ValueError("length of string generated is not equal to monkey string")
     return retval
 
 def get_hill_climbing_monkey_string(stringtochange, chposition):
