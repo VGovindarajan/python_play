@@ -15,8 +15,10 @@ class Fraction:
     def __init__(self, num, den):
         if den == 0:
             raise ValueError('denominator cannot be zero(0)')
-        self.num = num
-        self.den = den
+        common = gcd(num, den)
+        self.num = num / common
+        self.den = den / common
+
 
     def __repr__(self):
         return "%d / %d" % (self.num, self.den)
@@ -27,26 +29,22 @@ class Fraction:
     def __add__(self, other):
         newnum = (self.num * other.den) + (self.den * other.num)
         newden = self.den * other.den
-        common = gcd(newnum, newden)
-        return Fraction(newnum / common, newden / common)
+        return Fraction(newnum, newden)
 
     def __sub__(self, other):
         newnum = (self.num * other.num) - (self.den * other.num)
         newden = self.den * other.den
-        common = gcd(newnum, newden)
-        return Fraction(newnum / common, newden / common)
+        return Fraction(newnum, newden)
 
     def __mul__(self, other):
         newnum = self.num * other.num
         newden = self.den * other.den
-        common = gcd(newnum, newden)
-        return Fraction(newnum / common, newden / common)
+        return Fraction(newnum, newden)
 
     def __truediv__(self, other):
         newnum = self.num * other.den
         newden = self.den * other.num
-        common = gcd(newnum, newden)
-        return Fraction(newnum / common, newden / common)
+        return Fraction(newnum, newden)
 
     def __eq__(self, other):
         left = self.num * other.den
@@ -87,6 +85,9 @@ def main():
     print(twofifths, "+", onefifths, " = ", threefifths)
     subonefifths = twofifths - onefifths
     print(twofifths, "-", onefifths, " = ", subonefifths)
+
+    negthreefifts = Fraction(-3, 5)
+    print("negthreefifts", negthreefifts)
 
     print("****** operator overloading ******")
     ## == operator
