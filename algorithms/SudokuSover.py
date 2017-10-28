@@ -81,12 +81,28 @@ class Sudoku:
                 retVal.append(i)
         return retVal
 
+    def getUnfilledIndicesInRow(self, rowIndex):
+        rowInQuestion = self.grid[rowIndex]
+        retVal = []
+        for i in allowedColsRows:
+            if rowInQuestion[i] not in allowedNumbers:
+                retVal.append([rowIndex, i])
+        return retVal
+
     def getNumbersInCol(self, colIndex):
         retVal = []
         for i in allowedColsRows:
             rowInQuestion = self.grid[i]
             if rowInQuestion[colIndex] in allowedNumbers:
                 retVal.append(rowInQuestion[colIndex])
+        return retVal
+
+    def getUnfilledIndicesInCol(self, colIndex):
+        retVal = []
+        for i in allowedColsRows:
+            rowInQuestion = self.grid[i]
+            if rowInQuestion[colIndex] not in allowedNumbers:
+                retVal.append([i, colIndex])
         return retVal
 
     def getNumbersInHomeSquare(self, rowIndex, colIndex):
@@ -113,10 +129,43 @@ class Sudoku:
         for i in range(rowStartIndex, rowEndIndex):
             rowInQuestion = self.grid[i]
             for j in range(colStartIndex, colEndIndex):
-                if rowInQuestion[j] in allowedNumbers:
-                    retVal.append(rowInQuestion[j])
+                if rowInQuestion[j] not in allowedNumbers:
+                    retVal.append([i, j])
         return retVal
 
+
+class SudokuSolver:
+    def __init__(self, sudokuPuzzle):
+        self.sudoku = sudokuPuzzle
+
+    def __repr__(self):
+        return self.sudoku.__repr__()
+
+    def getMostFilledRowAndUnfilledIndices(self, skipList):
+        rowMax = 0
+        rowIndex = 0
+        rowIndices = []
+        for i in allowedColsRows:
+            if not i in skipList:
+                filledRows = self.sudoku.getNumbersInRow(i)
+                if len(filledRows) > rowMax:
+                    rowMax = len(filledRows)
+                    rowIndex = i
+                    rowIndices = self.sudoku.getUnfilledIndicesInRow(i)
+        return [rowIndex, rowIndices]
+
+    def getMostFilledColAndUnfilledIndices(self, skipList):
+        colMax = 0
+        colIndex = 0
+        colIndices = []
+        for i in allowedColsRows:
+            if not i in skipList:
+                filledCols = self.sudoku.getNumbersInCol(i)
+                if len(filledCols) > colMax:
+                    colMax = len(filledCols)
+                    colIndex = i
+                    colIndices = self.sudoku.getUnfilledIndicesInCol(i)
+        return [colIndex, colIndices]
 
 def main():
     sudoku = Sudoku('Test')
@@ -134,13 +183,21 @@ def main():
     sudoku.addAtPosition(10, 10, 9)
     print(sudoku)
 
-    numbersInRow = sudoku.getNumbersInRow(0)
-    print(numbersInRow)
+    # numbersInRow = sudoku.getNumbersInRow(0)
+    # print(numbersInRow)
 
-    numbersInCol = sudoku.getNumbersInCol(2)
-    print(numbersInCol)
+    # numbersInCol = sudoku.getNumbersInCol(2)
+    #print(numbersInCol)
 
-    print(sudoku.getNumbersInHomeSquare(0, 0))
+    # print(sudoku.getNumbersInHomeSquare(0, 0))
+    # print(sudoku.getUnfilledRowColIndicesInHomeSquare(1, 1))
+    # print(sudoku.getUnfilledIndicesInRow(8))
+    # print(sudoku.getUnfilledIndicesInCol(2))
+
+    solver = SudokuSolver(sudoku)
+    print("Most filed col", solver.getMostFilledColAndUnfilledIndices([]))
+    print("Most filled row", solver.getMostFilledRowAndUnfilledIndices([]))
+
 
 
 if __name__ == "__main__":
