@@ -1,3 +1,5 @@
+import datetime as dt
+
 newline = '\n'
 allowedNumbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 allowedColsRows = (0, 1, 2, 3, 4, 5, 6, 7, 8)
@@ -188,21 +190,21 @@ class SudokuSolver:
         possibleNumbersInRow = self.sudoku.getPossibleNumbersInRow(rowIndex)
         possibleNumbersInCol = self.sudoku.getPossibleNumbersInCol(colIndex)
         possibleNumbersInHomeSquare = self.sudoku.getPossibleNumbersInHomeSquare(rowIndex, colIndex)
-        print("fillUniqueNumberForRowCol. RowIndex =", rowIndex, ", ColIndex =", colIndex, ", possibleNumbersInRow = ",
-              possibleNumbersInRow, ", possibleNumbersInCol = ", possibleNumbersInCol,
-              " possibleNumbersInHomeSquare = ", possibleNumbersInHomeSquare)
+        # print("fillUniqueNumberForRowCol. RowIndex =", rowIndex, ", ColIndex =", colIndex, ", possibleNumbersInRow = ",
+        #      possibleNumbersInRow, ", possibleNumbersInCol = ", possibleNumbersInCol,
+        #      " possibleNumbersInHomeSquare = ", possibleNumbersInHomeSquare)
         rowColPossibilities = tuple(set(possibleNumbersInRow).intersection(possibleNumbersInCol))
         rowColSquarePossibilities = tuple(set(rowColPossibilities).intersection(possibleNumbersInHomeSquare))
-        print("fillUniqueNumberForRowCol. RowIndex =", rowIndex, ", ColIndex =", colIndex,
-              ", rowColSquarePossibilities = ", rowColSquarePossibilities)
+        # print("fillUniqueNumberForRowCol. RowIndex =", rowIndex, ", ColIndex =", colIndex,
+        #      ", rowColSquarePossibilities = ", rowColSquarePossibilities)
         if len(rowColSquarePossibilities) == 1:
             print('Unique Match found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
                   list(rowColSquarePossibilities)[0])
             self.sudoku.addAtIndexPosition(rowIndex, colIndex, list(rowColSquarePossibilities)[0])
             squaresFilled = 1
-        else:
-            print('Non-Unique Match found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
-                  list(rowColSquarePossibilities))
+            # else:
+            # print('Non-Unique Match found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
+            #list(rowColSquarePossibilities))
         return squaresFilled
 
     def fillUniqueNumbersForRow(self, rowIndex, rowUnfilled):
@@ -220,25 +222,24 @@ class SudokuSolver:
         return squaresFilled
 
     def fillKnownNumbers(self, maxLoops):
-        numberOfBoxesFilled = 0
         loopAgain = True
         while (loopAgain):
             maxLoops -= 1
             colsTried = []
             rowsTried = []
             for i in allowedColsRows:
-                print("In Row. Filled Squares =", numberOfBoxesFilled, ", Loop Count = ", i, self.sudoku)
+                numberOfBoxesFilled = 0
+                #print("In Row. Filled Squares =", numberOfBoxesFilled, ", Loop Count = ", i, self.sudoku)
                 rowsWithMostFills = self.getMostFilledRowAndUnfilledIndices(rowsTried)
                 rowsTried.append(rowsWithMostFills[0])
                 numberOfBoxesFilled += self.fillUniqueNumbersForRow(rowsWithMostFills[0], rowsWithMostFills[1])
 
-                print("In Col. Filled Squares =", numberOfBoxesFilled, ", Loop Count = ", i, self.sudoku)
+                #print("In Col. Filled Squares =", numberOfBoxesFilled, ", Loop Count = ", i, self.sudoku)
                 colWithMostFills = self.getMostFilledColAndUnfilledIndices(colsTried)
                 colsTried.append(colWithMostFills[0])
                 numberOfBoxesFilled += self.fillUniqueNumbersForCol(colWithMostFills[0], colWithMostFills[1])
-            if numberOfBoxesFilled > 0 | maxLoops > 0:
-                loopAgain = True
-
+            # if numberOfBoxesFilled > 0 & maxLoops > 0:
+            loopAgain = False
 
 def main():
     sudoku = Sudoku('Test 1')
@@ -247,7 +248,7 @@ def main():
     sudoku.addAtPosition(1, 2, 3)
     sudoku.addAtPosition(1, 3, 5)
     sudoku.addAtPosition(1, 4, 7)
-    sudoku.addAtPosition(1, 5, 5)
+    sudoku.addAtPosition(1, 5, 4)
     # Row 2
     sudoku.addAtPosition(2, 5, 1)
     sudoku.addAtPosition(2, 6, 8)
@@ -264,7 +265,7 @@ def main():
 
     # Row 4
     sudoku.addAtPosition(4, 2, 2)
-    sudoku.addAtPosition(4, 4, 3)
+    sudoku.addAtPosition(4, 4, 4)
     sudoku.addAtPosition(4, 5, 3)
     sudoku.addAtPosition(4, 6, 9)
     sudoku.addAtPosition(4, 8, 6)
@@ -317,10 +318,14 @@ def main():
     # print(sudoku.getUnfilledIndicesInCol(2))
 
     solver = SudokuSolver(sudoku)
-    print("Most filed col", solver.getMostFilledColAndUnfilledIndices([]))
-    print("Most filled row", solver.getMostFilledRowAndUnfilledIndices([]))
+    startTime = dt.datetime.utcnow()
+    # print("Most filed col", solver.getMostFilledColAndUnfilledIndices([]))
+    #print("Most filled row", solver.getMostFilledRowAndUnfilledIndices([]))
 
     solver.fillKnownNumbers(1)
+    print(solver)
+    endTime = dt.datetime.utcnow()
+    print("Time taken", (endTime - startTime).microseconds, " milliseconds")
 
 
 if __name__ == "__main__":
