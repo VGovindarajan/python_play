@@ -68,12 +68,19 @@ class Sudoku:
         rowIndex = rowNum - 1
         colIndex = colNum - 1
         valueToChange = value
+        if not valueToChange in allowedNumbers:
+            return
         if not rowIndex in allowedColsRows:
+            return
+        possibleNumbersInRow = self.getPossibleNumbersInRow(rowIndex)
+        if not valueToChange in possibleNumbersInRow:
             return
         if not colIndex in allowedColsRows:
             return
-        if not valueToChange in allowedNumbers:
+        possibleNumbersInCol = self.getPossibleNumbersInCol(colIndex)
+        if not valueToChange in possibleNumbersInCol:
             return
+
         rowInQuestion = self.grid[rowIndex]
         rowInQuestion[colIndex] = valueToChange
         self.grid[rowIndex] = rowInQuestion
@@ -151,6 +158,19 @@ class Sudoku:
                     retVal.append([i, j])
         return retVal
 
+    def countNumberOfTimesNumberCanBePlacedInHomeSquare(self, numberToCheck, unfilledSquares):
+        allowedCount = 0
+        for i in unfilledSquares:
+            rowIndex = i[0]
+            colIndex = i[1]
+            possibleNumbersInRow = self.getPossibleNumbersInRow(rowIndex)
+            possibleNumbersInCol = self.getPossibleNumbersInCol(colIndex)
+            numList = [numberToCheck]
+            rowPossibilities = set(numList).issubset(set(possibleNumbersInRow))
+            colPossibilities = set(numList).issubset(set(possibleNumbersInCol))
+            if rowPossibilities & colPossibilities:
+                allowedCount += 1
+        return allowedCount
 
 class SudokuSolver:
     def __init__(self, sudokuPuzzle):
@@ -202,9 +222,21 @@ class SudokuSolver:
                   list(rowColSquarePossibilities)[0])
             self.sudoku.addAtIndexPosition(rowIndex, colIndex, list(rowColSquarePossibilities)[0])
             squaresFilled = 1
-            # else:
-            # print('Non-Unique Match found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
-            #list(rowColSquarePossibilities))
+        elif len(rowColSquarePossibilities) > 1:
+            print('Non-Unique Match found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
+                  list(rowColSquarePossibilities))
+            homeSquareUnfilled = self.sudoku.getUnfilledRowColIndicesInHomeSquare(rowIndex, colIndex)
+            possibilityWeights = []
+            for j in rowColSquarePossibilities:
+                weight = self.sudoku.countNumberOfTimesNumberCanBePlacedInHomeSquare(j, homeSquareUnfilled)
+                possibilityWeights.append([weight, j])
+            possibilityWeights.sort()
+            print("lowest weight", possibilityWeights[0], possibilityWeights[1])
+            if possibilityWeights[0][0] == 1:
+                self.sudoku.addAtIndexPosition(rowIndex, colIndex, possibilityWeights[0][1])
+                squaresFilled = 1
+                print('Single weight found for rowIndex = ', rowIndex, ', colIndex ', colIndex, ', number is ',
+                      possibilityWeights[0][1])
         return squaresFilled
 
     def fillUniqueNumbersForRow(self, rowIndex, rowUnfilled):
@@ -238,10 +270,12 @@ class SudokuSolver:
                 colWithMostFills = self.getMostFilledColAndUnfilledIndices(colsTried)
                 colsTried.append(colWithMostFills[0])
                 numberOfBoxesFilled += self.fillUniqueNumbersForCol(colWithMostFills[0], colWithMostFills[1])
-            # if numberOfBoxesFilled > 0 & maxLoops > 0:
-            loopAgain = False
+            if maxLoops == 0:
+                loopAgain = False
 
-def main():
+
+def test1():
+    # Test 1
     sudoku = Sudoku('Test 1')
     # Row 1
     sudoku.addAtPosition(1, 1, 8)
@@ -305,28 +339,75 @@ def main():
     sudoku.addAtPosition(9, 8, 4)
 
     print(sudoku)
-
-    # numbersInRow = sudoku.getNumbersInRow(0)
-    # print(numbersInRow)
-
-    # numbersInCol = sudoku.getNumbersInCol(2)
-    #print(numbersInCol)
-
-    # print(sudoku.getNumbersInHomeSquare(0, 0))
-    # print(sudoku.getUnfilledRowColIndicesInHomeSquare(1, 1))
-    # print(sudoku.getUnfilledIndicesInRow(8))
-    # print(sudoku.getUnfilledIndicesInCol(2))
-
     solver = SudokuSolver(sudoku)
     startTime = dt.datetime.utcnow()
-    # print("Most filed col", solver.getMostFilledColAndUnfilledIndices([]))
-    #print("Most filled row", solver.getMostFilledRowAndUnfilledIndices([]))
-
     solver.fillKnownNumbers(1)
     print(solver)
     endTime = dt.datetime.utcnow()
     print("Time taken", (endTime - startTime).microseconds, " milliseconds")
 
+
+def test2():
+    # Test 2
+    sudoku2 = Sudoku("Test 2")
+    # Row 1
+    sudoku2.addAtPosition(1, 1, 5)
+    sudoku2.addAtPosition(1, 3, 9)
+    sudoku2.addAtPosition(1, 5, 7)
+    sudoku2.addAtPosition(1, 7, 3)
+
+    # Row 2
+    sudoku2.addAtPosition(2, 2, 7)
+    sudoku2.addAtPosition(2, 3, 4)
+    sudoku2.addAtPosition(2, 6, 8)
+    sudoku2.addAtPosition(2, 8, 1)
+
+    # Row 3
+    sudoku2.addAtPosition(3, 6, 3)
+    sudoku2.addAtPosition(3, 8, 7)
+    sudoku2.addAtPosition(3, 9, 2)
+
+    # Row 4
+    sudoku2.addAtPosition(4, 2, 1)
+    sudoku2.addAtPosition(4, 6, 6)
+    sudoku2.addAtPosition(4, 8, 5)
+
+    # Row 5
+    sudoku2.addAtPosition(5, 1, 7)
+    sudoku2.addAtPosition(5, 5, 4)
+    sudoku2.addAtPosition(5, 6, 9)
+
+    # Row 6
+    sudoku2.addAtPosition(6, 2, 9)
+    sudoku2.addAtPosition(6, 7, 7)
+    sudoku2.addAtPosition(6, 8, 3)
+
+    # Row 7
+    sudoku2.addAtPosition(7, 3, 7)
+    sudoku2.addAtPosition(7, 4, 8)
+    sudoku2.addAtPosition(7, 9, 3)
+
+    # Row 8
+    sudoku2.addAtPosition(8, 1, 6)
+    sudoku2.addAtPosition(8, 3, 2)
+    sudoku2.addAtPosition(8, 4, 3)
+
+    # Row 9
+    sudoku2.addAtPosition(9, 2, 3)
+    sudoku2.addAtPosition(9, 4, 4)
+    sudoku2.addAtPosition(9, 7, 8)
+    sudoku2.addAtPosition(9, 9, 6)
+    print(sudoku2)
+
+    solver = SudokuSolver(sudoku2)
+    startTime = dt.datetime.utcnow()
+    solver.fillKnownNumbers(3)
+    print(solver)
+    endTime = dt.datetime.utcnow()
+    print("Time taken", (endTime - startTime).microseconds, " milliseconds")
+
+def main():
+    test2()
 
 if __name__ == "__main__":
     main()
