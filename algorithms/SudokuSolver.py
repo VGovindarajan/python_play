@@ -1,6 +1,7 @@
 # Vijayarajan Govindarajan 2017
 # http://www.sudokukingdom.com/
 # http://www.sudokukingdom.com/very-easy-sudoku.php
+# https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#/media/File:Sudoku_puzzle_hard_for_brute_force.svg
 import datetime as dt
 
 newline = '\n'
@@ -526,7 +527,6 @@ def test2():
     endTime = dt.datetime.utcnow()
     print("Time taken", (endTime - startTime).microseconds, " microseconds")
 
-
 def test3():
     # Test 3
     sudoku = Sudoku("Test 3")
@@ -582,11 +582,59 @@ def test3():
     endTime = dt.datetime.utcnow()
     print("Time taken", (endTime - startTime).microseconds, " microseconds")
 
+def test4():
+    # Test 4
+    sudoku = Sudoku("Test 4")
+    # Row 1
+
+    # Row 2
+    sudoku.addAtPosition(2, 6, 3)
+    sudoku.addAtPosition(2, 8, 8)
+    sudoku.addAtPosition(2, 9, 5)
+
+    # Row 3
+    sudoku.addAtPosition(3, 3, 1)
+    sudoku.addAtPosition(3, 5, 2)
+
+    # Row 4
+    sudoku.addAtPosition(4, 4, 5)
+    sudoku.addAtPosition(4, 6, 7)
+
+    # Row 5
+    sudoku.addAtPosition(5, 3, 4)
+    sudoku.addAtPosition(5, 7, 1)
+
+    # Row 6
+    sudoku.addAtPosition(6, 1, 5)
+    sudoku.addAtPosition(6, 8, 7)
+    sudoku.addAtPosition(6, 9, 3)
+
+    # Row 7
+    sudoku.addAtPosition(7, 1, 5)
+    sudoku.addAtPosition(7, 8, 7)
+    sudoku.addAtPosition(7, 9, 3)
+
+    # Row 8
+    sudoku.addAtPosition(8, 3, 2)
+    sudoku.addAtPosition(8, 5, 1)
+
+    # Row 9
+    sudoku.addAtPosition(9, 5, 4)
+    sudoku.addAtPosition(9, 9, 9)
+    print(sudoku)
+
+    solver = SudokuSolver()
+    startTime = dt.datetime.utcnow()
+    solver.fillUnknownNumbers(sudoku, 3)
+    print(sudoku)
+    endTime = dt.datetime.utcnow()
+    print("Time taken", (endTime - startTime).microseconds, " microseconds")
 
 def main():
     test1()
     test2()
     test3()
+    test4()
 
 if __name__ == "__main__":
     main()
