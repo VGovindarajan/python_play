@@ -7,9 +7,9 @@
     <list id="0fd8d790-7082-4d15-bd29-c09dcd3db5a2" name="New changelist" comment="Sudoku Solver. Added solving logic using weights, refactored code and second test passed.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogicGates.py" afterPath="$PROJECT_DIR$/LogicGates.py" />
     </list>
-    <list default="true" id="673f048b-3bb4-41a3-93d2-66c7144e5b1b" name="changes" comment="Renamed files">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" afterPath="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SudokuSolver.py" afterPath="$PROJECT_DIR$/SudokuSolver.py" />
+    <list default="true" id="673f048b-3bb4-41a3-93d2-66c7144e5b1b" name="changes" comment="List Search, O(n.Log(n)) implmentation.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinaryFormatter.py" afterPath="$PROJECT_DIR$/BinaryFormatter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StackImpl.py" afterPath="$PROJECT_DIR$/StackImpl.py" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +35,39 @@
         <entry file="file://$PROJECT_DIR$/monkey_typing_book.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListSearch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListSearch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+              <folding>
+                <element signature="e#145#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackImpl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StackImpl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryFormatter.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BinaryFormatter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36430317">
+              <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -61,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuSolver.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SudokuSolver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SudokuSolver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37408313">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="632" column="0" selection-start-line="632" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
               <folding>
                 <element signature="e#419#511#0" expanded="false" />
                 <element signature="e#545#650#0" expanded="false" />
@@ -117,11 +149,15 @@
         <option value="$PROJECT_DIR$/SudokuSover.py" />
         <option value="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" />
         <option value="$PROJECT_DIR$/SudokuSolver.py" />
+        <option value="$PROJECT_DIR$/ListSearch.py" />
+        <option value="$PROJECT_DIR$/StackImpl.py" />
+        <option value="$PROJECT_DIR$/BinaryFormatter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
+    <option name="x" value="770" />
+    <option name="y" value="5" />
     <option name="width" value="800" />
     <option name="height" value="860" />
   </component>
@@ -156,24 +192,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.SudokuSolver">
-    <configuration default="false" name="monkey_typing_book" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/monkey_typing_book.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.BinaryFormatter">
     <configuration default="false" name="Fraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,23 +210,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LogicGates" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LogicGates.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="SudokuSolver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,6 +223,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SudokuSolver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ListSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ListSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StackImpl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StackImpl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BinaryFormatter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryFormatter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -364,19 +417,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.SudokuSover" />
-      <item index="1" class="java.lang.String" itemvalue="Python.monkey_typing_book" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Fraction" />
-      <item index="3" class="java.lang.String" itemvalue="Python.LogicGates" />
-      <item index="4" class="java.lang.String" itemvalue="Python.SudokuSolver" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Fraction" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SudokuSolver" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ListSearch" />
+      <item index="4" class="java.lang.String" itemvalue="Python.StackImpl" />
+      <item index="5" class="java.lang.String" itemvalue="Python.BinaryFormatter" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.SudokuSolver" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Fraction" />
-        <item index="2" class="java.lang.String" itemvalue="Python.LogicGates" />
-        <item index="3" class="java.lang.String" itemvalue="Python.monkey_typing_book" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.BinaryFormatter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.StackImpl" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ListSearch" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SudokuSolver" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Fraction" />
       </list>
     </recent_temporary>
   </component>
@@ -489,11 +544,17 @@
       <option name="project" value="LOCAL" />
       <updated>1509537372186</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="List Search, O(n.Log(n)) implmentation.">
+      <created>1509740663708</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1509740663708</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="0" width="800" height="860" extended-state="0" />
+    <frame x="770" y="5" width="800" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5089286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -502,7 +563,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41810918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41810918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -543,7 +604,8 @@
     <MESSAGE value="Added test results file" />
     <MESSAGE value="Added author name" />
     <MESSAGE value="Renamed files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed files" />
+    <MESSAGE value="List Search, O(n.Log(n)) implmentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="List Search, O(n.Log(n)) implmentation." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -603,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey_typing_book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68">
@@ -627,6 +681,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/monkey_typing_book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SudokuSolver.Test.Result.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -637,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SudokuSolver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37408313">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="632" column="0" selection-start-line="632" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
           <folding>
             <element signature="e#419#511#0" expanded="false" />
             <element signature="e#545#650#0" expanded="false" />
@@ -650,6 +712,32 @@
             <element signature="e#19397#20860#0" expanded="false" />
             <element signature="e#20879#22189#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <element signature="e#145#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StackImpl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryFormatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36430317">
+          <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
