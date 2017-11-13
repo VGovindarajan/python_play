@@ -33,5 +33,25 @@ def main():
     while not queue.isEmpty():
         print(str(queue.deque()))
 
+    names = ["Apple", "Boy", "Charlie", "David", "Eagle", "Friend", "Gamma", "Harry", "India"]
+    lastOneFor7 = hotPotatoes(names, 7)
+    print(names, " last one for 7", lastOneFor7)
+    lastOneFor5 = hotPotatoes(names, 5)
+    print(names, " last one for 5", lastOneFor5)
+
+def hotPotatoes(nameList, num):
+    simQueue = QueueImpl()
+    for name in nameList:
+        simQueue.enqueue(name)
+
+    while simQueue.size() > 1:
+        for i in range(num):
+            simQueue.enqueue(simQueue.deque())
+
+        removed = simQueue.deque()
+       # print("Removed %s, Queue Size is %d" %(removed, simQueue.size()))
+
+    return simQueue.deque()
+
 if __name__ == "__main__":
     main()
