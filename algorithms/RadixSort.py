@@ -62,11 +62,11 @@ def radixSortIntImpl(listOfItems, *args):
 
     otherQ = QueueImpl()
 
-    for j in listOfItems:
-        divisor = (10**position) * 10
-        if divisor == 0:
-            divisor = 1
+    divisor = (10**position) * 10
+    if divisor == 0:
+        divisor = 1
 
+    for j in listOfItems:
         #print("j", j, "position", position)
         if j >= divisor:
             result = j // divisor
@@ -126,32 +126,32 @@ def main():
 
 '''
 1000
-int impl  1.889598973342563 milliseconds
-str impl  1.8513608494860438 milliseconds
+int impl  1.4461375473120377 milliseconds
+str impl  1.4048108601867277 milliseconds
 2000
-int impl  6.744180671638018 milliseconds
-str impl  7.170844494925824 milliseconds
+int impl  2.804392260079455 milliseconds
+str impl  2.6107756456237627 milliseconds
 3000
-int impl  12.620656007036985 milliseconds
-str impl  11.496835220493008 milliseconds
+int impl  3.832678938051215 milliseconds
+str impl  10.708227894534971 milliseconds
 4000
-int impl  14.069975249679452 milliseconds
-str impl  8.86378466650929 milliseconds
+int impl  13.87945061967033 milliseconds
+str impl  11.36062710948871 milliseconds
 5000
-int impl  19.056839067417343 milliseconds
-str impl  15.396405026394376 milliseconds
+int impl  14.81083927953037 milliseconds
+str impl  18.27039772712154 milliseconds
 6000
-int impl  16.599875012971964 milliseconds
-str impl  22.25017210424862 milliseconds
+int impl  24.16321868966611 milliseconds
+str impl  16.952462354690226 milliseconds
 7000
-int impl  30.86031635250754 milliseconds
-str impl  19.807096891175746 milliseconds
+int impl  20.907910637316007 milliseconds
+str impl  14.799883527903319 milliseconds
 8000
-int impl  13.356388650356763 milliseconds
-str impl  18.820905144805153 milliseconds
+int impl  13.255780174883 milliseconds
+str impl  10.773843803467798 milliseconds
 9000
-int impl  36.884047162076 milliseconds
-str impl  37.07878858375784 milliseconds
+int impl  13.981941883312743 milliseconds
+str impl  14.820872453550862 milliseconds
 
 Process finished with exit code 0
 '''
