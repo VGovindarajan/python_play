@@ -17,13 +17,13 @@ pop(pos) removes and returns the item at position pos. It needs the position and
 
 from Node import Node
 
+
 class UnorderedListImpl:
     def __init__(self):
         self.head = None
 
     def __repr__(self):
         return str(self.head)
-
 
     def isEmpty(self):
         return True if self.head is None else False
@@ -107,7 +107,7 @@ class UnorderedListImpl:
         invalidPosition = -1
         size = self.size()
         if size < pos:
-            #print("LinkedList size is ", size, " cannot insert at ",  pos)
+            # print("LinkedList size is ", size, " cannot insert at ",  pos)
             return invalidPosition
         current = self.head
         previous = None
@@ -129,12 +129,12 @@ class UnorderedListImpl:
     def pop(self, *args):
         invalidPosition = -1
         size = self.size()
-        pos = size-1
+        pos = size - 1
         if len(args) == 1 and isinstance(args[0], int):
             pos = args[0]
 
-        if size-1 < pos:
-            print("LinkedList index positions are from 0 To ", size-1, " cannot pop at ",  pos)
+        if size - 1 < pos:
+            print("LinkedList index positions are from 0 To ", size - 1, " cannot pop at ", pos)
             return invalidPosition
         current = self.head
         previous = None
@@ -152,6 +152,7 @@ class UnorderedListImpl:
             previous.setNext(current.getNext())
 
         return current.getData()
+
 
 def main():
     u = UnorderedListImpl()
@@ -181,7 +182,7 @@ def main():
     ul = UnorderedListImpl()
     print("pop() on new list", ul.pop())
     ul.append(555)
-    ul.insert(3,111)
+    ul.insert(3, 111)
     ul.insert(0, 222)
     ul.insert(1, 333)
     ul.insert(3, 444)
@@ -189,12 +190,13 @@ def main():
     print(ul)
 
     print("pop at index 7", ul.pop(7))
-    print("pop at index 0",ul.pop(0))
+    print("pop at index 0", ul.pop(0))
     print(ul)
-    print("pop at index 3",ul.pop(3))
+    print("pop at index 3", ul.pop(3))
     print(ul)
     print("pop() on list", ul.pop())
     print(ul)
+
 
 if __name__ == "__main__":
     main()

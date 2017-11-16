@@ -1,6 +1,6 @@
-#https://runestone.academy/runestone/static/pythonds/BasicDS/TheOrderedListAbstractDataType.html
-#Vijayarajan Govindarajan 2017
-#Based on LinkedListImpl.py
+# https://runestone.academy/runestone/static/pythonds/BasicDS/TheOrderedListAbstractDataType.html
+# Vijayarajan Govindarajan 2017
+# Based on LinkedListImpl.py
 
 '''
 OrderedList() creates a new ordered list that is empty. It needs no parameters and returns an empty list.
@@ -15,6 +15,7 @@ pop(pos) removes and returns the item at position pos. It needs the position and
 '''
 
 from Node import Node
+
 
 class OrderedLinkListImpl:
     def __init__(self):
@@ -32,7 +33,7 @@ class OrderedLinkListImpl:
         stop = False
 
         while current is not None and stop is False:
-            if current.getData() > data :
+            if current.getData() > data:
                 stop = True
             else:
                 previous = current
@@ -109,12 +110,12 @@ class OrderedLinkListImpl:
     def pop(self, *args):
         invalidPosition = -1
         size = self.size()
-        pos = size-1
+        pos = size - 1
         if len(args) == 1 and isinstance(args[0], int):
             pos = args[0]
 
-        if size-1 < pos:
-            print("LinkedList index positions are from 0 To ", size-1, " cannot pop at ",  pos)
+        if size - 1 < pos:
+            print("LinkedList index positions are from 0 To ", size - 1, " cannot pop at ", pos)
             return invalidPosition
         current = self.head
         previous = None
@@ -132,6 +133,7 @@ class OrderedLinkListImpl:
             previous.setNext(current.getNext())
 
         return current.getData()
+
 
 def main():
     ol = OrderedLinkListImpl()
@@ -159,7 +161,6 @@ def main():
     print(ol)
     print("remove(12)", ol.remove(12))
     print(ol)
-
 
 
 if __name__ == "__main__":

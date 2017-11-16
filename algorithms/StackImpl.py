@@ -1,4 +1,4 @@
-#https://runestone.academy/runestone/static/pythonds/BasicDS/ImplementingaStackinPython.html
+# https://runestone.academy/runestone/static/pythonds/BasicDS/ImplementingaStackinPython.html
 # Vijayarajan Govindarajan 2017
 
 class StackImpl:
@@ -20,10 +20,11 @@ class StackImpl:
         return len(self.container) == 0
 
     def peek(self):
-        return self.container[len(self.container)-1]
+        return self.container[len(self.container) - 1]
 
     def size(self):
         return len(self.container)
+
 
 def main():
     stack = StackImpl()
@@ -33,6 +34,7 @@ def main():
     print(stack)
     while not stack.isEmpty():
         print(str(stack.pop()))
+
 
 if __name__ == "__main__":
     main()

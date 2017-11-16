@@ -1,5 +1,5 @@
-#https://runestone.academy/runestone/static/pythonds/BasicDS/ImplementingaDequeinPython.html
-#Vijayarajan Govindarajan 2017
+# https://runestone.academy/runestone/static/pythonds/BasicDS/ImplementingaDequeinPython.html
+# Vijayarajan Govindarajan 2017
 
 class DequeImpl:
     def __init__(self):
