@@ -8,7 +8,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogicGates.py" afterPath="$PROJECT_DIR$/LogicGates.py" />
     </list>
     <list default="true" id="673f048b-3bb4-41a3-93d2-66c7144e5b1b" name="changes" comment="List Search, O(n.Log(n)) implmentation.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RadixSort.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DoublyLinkedListImpl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LinkedListTests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_assert.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_1.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_1.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_2.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_2.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_3.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_3.PNG" />
@@ -27,6 +29,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Node.py" afterPath="$PROJECT_DIR$/Node.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrderedLinkListImpl.py" afterPath="$PROJECT_DIR$/OrderedLinkListImpl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QueueImpl.py" afterPath="$PROJECT_DIR$/QueueImpl.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RadixSort.py" afterPath="$PROJECT_DIR$/RadixSort.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StackImpl.py" afterPath="$PROJECT_DIR$/StackImpl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" afterPath="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SudokuSolver.py" afterPath="$PROJECT_DIR$/SudokuSolver.py" />
@@ -56,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/ListSearch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+              <caret line="37" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#145#161#0" expanded="true" />
               </folding>
@@ -68,17 +71,7 @@
         <entry file="file://$PROJECT_DIR$/StackImpl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DequeImpl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DequeImpl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -88,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/LinkedListImpl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+              <caret line="154" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,17 +91,61 @@
         <entry file="file://$PROJECT_DIR$/OrderedLinkListImpl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RadixSort.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RadixSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RadixSort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20782396">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state vertical-scroll-proportion="-0.5964912">
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <folding>
+                <element signature="e#126#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoublyLinkedListImpl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DoublyLinkedListImpl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44">
+              <caret line="176" column="39" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
+              <folding>
+                <element signature="e#2155#2196#0" expanded="false" />
+                <element signature="e#2230#2262#0" expanded="false" />
+                <element signature="e#2297#2545#0" expanded="false" />
+                <element signature="e#2575#2731#0" expanded="false" />
+                <element signature="e#2769#3021#0" expanded="false" />
+                <element signature="e#3059#3754#0" expanded="false" />
+                <element signature="e#3792#4021#0" expanded="false" />
+                <element signature="e#4058#4473#0" expanded="false" />
+                <element signature="e#4516#5223#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedListTests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkedListTests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_assert.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_assert.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/Node.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <caret line="41" column="10" selection-start-line="30" selection-start-column="0" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -128,38 +165,8 @@
         <entry file="file://$PROJECT_DIR$/BinaryFormatter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueImpl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QueueImpl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SudokuSolver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SudokuSolver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="632" column="0" selection-start-line="632" selection-start-column="0" selection-end-line="640" selection-end-column="0" />
-              <folding>
-                <element signature="e#419#511#0" expanded="false" />
-                <element signature="e#545#650#0" expanded="false" />
-                <element signature="e#686#864#0" expanded="false" />
-                <element signature="e#901#1033#0" expanded="false" />
-                <element signature="e#1068#1208#0" expanded="false" />
-                <element signature="e#6969#17423#0" expanded="false" />
-                <element signature="e#17442#19378#0" expanded="false" />
-                <element signature="e#19397#20860#0" expanded="false" />
-                <element signature="e#20879#22189#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,22 +198,25 @@
         <option value="$PROJECT_DIR$/SudokuSolver.Test.Result.txt" />
         <option value="$PROJECT_DIR$/SudokuSolver.py" />
         <option value="$PROJECT_DIR$/ListSearch.py" />
-        <option value="$PROJECT_DIR$/StackImpl.py" />
-        <option value="$PROJECT_DIR$/BinaryFormatter.py" />
         <option value="$PROJECT_DIR$/QueueImpl.py" />
         <option value="$PROJECT_DIR$/DequeImpl.py" />
-        <option value="$PROJECT_DIR$/Node.py" />
+        <option value="$PROJECT_DIR$/StackImpl.py" />
         <option value="$PROJECT_DIR$/LinkedListImpl.py" />
         <option value="$PROJECT_DIR$/OrderedLinkListImpl.py" />
+        <option value="$PROJECT_DIR$/test_assert.py" />
+        <option value="$PROJECT_DIR$/BinaryFormatter.py" />
+        <option value="$PROJECT_DIR$/Node.py" />
         <option value="$PROJECT_DIR$/RadixSort.py" />
+        <option value="$PROJECT_DIR$/LinkedListTests.py" />
+        <option value="$PROJECT_DIR$/DoublyLinkedListImpl.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="770" />
-    <option name="y" value="5" />
-    <option name="width" value="800" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -239,41 +249,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.RadixSort">
-    <configuration default="false" name="DequeImpl" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DequeImpl.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LinkedListImpl" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedListImpl.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.DoublyLinkedListImpl">
     <configuration default="false" name="Node" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -321,6 +297,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RadixSort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DoublyLinkedListImpl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoublyLinkedListImpl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LinkedListTests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinkedListTests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -466,19 +476,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.SudokuSover" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DequeImpl" />
-      <item index="2" class="java.lang.String" itemvalue="Python.LinkedListImpl" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Node" />
-      <item index="4" class="java.lang.String" itemvalue="Python.OrderedLinkListImpl" />
-      <item index="5" class="java.lang.String" itemvalue="Python.RadixSort" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Node" />
+      <item index="2" class="java.lang.String" itemvalue="Python.OrderedLinkListImpl" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RadixSort" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DoublyLinkedListImpl" />
+      <item index="5" class="java.lang.String" itemvalue="Python.LinkedListTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.RadixSort" />
-        <item index="1" class="java.lang.String" itemvalue="Python.OrderedLinkListImpl" />
-        <item index="2" class="java.lang.String" itemvalue="Python.LinkedListImpl" />
+        <item index="0" class="java.lang.String" itemvalue="Python.DoublyLinkedListImpl" />
+        <item index="1" class="java.lang.String" itemvalue="Python.LinkedListTests" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RadixSort" />
         <item index="3" class="java.lang.String" itemvalue="Python.Node" />
-        <item index="4" class="java.lang.String" itemvalue="Python.DequeImpl" />
+        <item index="4" class="java.lang.String" itemvalue="Python.OrderedLinkListImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -601,7 +611,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="770" y="5" width="800" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5089286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -610,11 +620,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41810918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40938723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5419441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34028682" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -677,7 +687,7 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -772,24 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ListSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
-          <folding>
-            <element signature="e#145#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BinaryFormatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QueueImpl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -798,26 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DequeImpl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrderedLinkListImpl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -825,7 +801,41 @@
     <entry file="file://$PROJECT_DIR$/StackImpl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="31" />
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrderedLinkListImpl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#145#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_assert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryFormatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -833,16 +843,54 @@
     <entry file="file://$PROJECT_DIR$/LinkedListImpl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <caret line="154" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="10" selection-start-line="30" selection-start-column="0" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RadixSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20782396">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="-0.5964912">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="e#126#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedListTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoublyLinkedListImpl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44">
+          <caret line="176" column="39" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
+          <folding>
+            <element signature="e#2155#2196#0" expanded="false" />
+            <element signature="e#2230#2262#0" expanded="false" />
+            <element signature="e#2297#2545#0" expanded="false" />
+            <element signature="e#2575#2731#0" expanded="false" />
+            <element signature="e#2769#3021#0" expanded="false" />
+            <element signature="e#3059#3754#0" expanded="false" />
+            <element signature="e#3792#4021#0" expanded="false" />
+            <element signature="e#4058#4473#0" expanded="false" />
+            <element signature="e#4516#5223#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -5,6 +5,7 @@ class Node:
     def __init__(self, initdata):
         self.data = initdata
         self.next = None
+        self.back = None
 
     def getData(self):
         return self.data
@@ -12,11 +13,17 @@ class Node:
     def getNext(self):
         return self.next
 
+    def getBack(self):
+        return self.back
+
     def setData(self, newdata):
         self.data = newdata
 
     def setNext(self, newnext):
         self.next = newnext
+
+    def setBack(self, newBack):
+        self.back = newBack
 
     def __repr__(self):
         return str(self.data) + " " + str(self.next)

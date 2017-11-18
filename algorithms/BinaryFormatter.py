@@ -127,8 +127,5 @@ def main():
     postfixEval3 = postFixEvaluation(postfix3)
     print(infix3," in postfix is = ", postfix3 , " eval is  ", postfixEval3 )
 
-
-
-
 if __name__ == "__main__":
     main()

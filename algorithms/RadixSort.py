@@ -121,37 +121,37 @@ def main():
         print("int impl ", t4.timeit(number=100), "milliseconds")
 
         t5 = timeit.Timer(functools.partial(radixSortStrImpl, inputList), "from __main__ import radixSortStrImpl")
-        print("str impl ", t4.timeit(number=100), "milliseconds")
+        print("str impl ", t5.timeit(number=100), "milliseconds")
 
 
 '''
 1000
-int impl  1.4461375473120377 milliseconds
-str impl  1.4048108601867277 milliseconds
+int impl  0.976603705591687 milliseconds
+str impl  2.0103175119066488 milliseconds
 2000
-int impl  2.804392260079455 milliseconds
-str impl  2.6107756456237627 milliseconds
+int impl  1.9697028098893323 milliseconds
+str impl  4.209769895384185 milliseconds
 3000
-int impl  3.832678938051215 milliseconds
-str impl  10.708227894534971 milliseconds
+int impl  3.1947729725435288 milliseconds
+str impl  6.789623035626246 milliseconds
 4000
-int impl  13.87945061967033 milliseconds
-str impl  11.36062710948871 milliseconds
+int impl  4.340705211175997 milliseconds
+str impl  8.725804765548592 milliseconds
 5000
-int impl  14.81083927953037 milliseconds
-str impl  18.27039772712154 milliseconds
+int impl  5.79279902899372 milliseconds
+str impl  24.870661613967222 milliseconds
 6000
-int impl  24.16321868966611 milliseconds
-str impl  16.952462354690226 milliseconds
+int impl  19.43445042390293 milliseconds
+str impl  32.716978507020826 milliseconds
 7000
-int impl  20.907910637316007 milliseconds
-str impl  14.799883527903319 milliseconds
+int impl  15.7413152451863 milliseconds
+str impl  28.2207028391594 milliseconds
 8000
-int impl  13.255780174883 milliseconds
-str impl  10.773843803467798 milliseconds
+int impl  10.18594481336146 milliseconds
+str impl  19.753194714812537 milliseconds
 9000
-int impl  13.981941883312743 milliseconds
-str impl  14.820872453550862 milliseconds
+int impl  17.83018261866829 milliseconds
+str impl  26.86114199674381 milliseconds
 
 Process finished with exit code 0
 '''
