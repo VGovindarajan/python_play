@@ -18,7 +18,7 @@ def appendTest(count):
 
 
 def main():
-    for i in range(100000, 1000000, 100000):
+    for i in range(1000, 10000, 1000):
 
         t4 = timeit.Timer(functools.partial(addTest, i), "from __main__ import addTest")
         addTime =  t4.timeit(number=10)

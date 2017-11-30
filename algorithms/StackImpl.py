@@ -3,10 +3,11 @@
 
 class StackImpl:
     def __init__(self):
+        self.name=""
         self.container = []
 
     def __repr__(self):
-        return str(self.container)
+        return self.name + str(self.container)
 
     def push(self, value):
         self.container.append(value)
@@ -25,6 +26,8 @@ class StackImpl:
     def size(self):
         return len(self.container)
 
+    def setName(self, name):
+        self.name = name
 
 def main():
     stack = StackImpl()
