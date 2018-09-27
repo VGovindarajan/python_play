@@ -9,6 +9,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
+    def get_key(self):
+        return self.key
+
     def get_value(self):
         return self.value
 
@@ -28,7 +31,7 @@ class TreeNode:
         self.right = right
 
     def __repr__(self):
-        return str(self.key) + ", v=" + str(self.value) + ", l=" + str(self.left) + ", r=" + str(self.right)
+        return str(self.key) + ", v=" + str(self.value) + ", l=[" + str(self.left) + "], r=[" + str(self.right) + "]"
 
 def main():
     root = TreeNode(None, 40, 40, None)
