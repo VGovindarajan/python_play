@@ -73,6 +73,7 @@ def sort_list(given_list):
 
 def main():
     testList = [1,2,12,1,45,21,34,6,46,8,9,34]
+    testList = ["a","apple","oranges", "bananas", "cherries", "mangoes", "lemons"]
     print(testList)
     sorted_list = sort_list(testList)
     print(sorted_list)
