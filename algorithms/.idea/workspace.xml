@@ -8,7 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogicGates.py" afterPath="$PROJECT_DIR$/LogicGates.py" />
     </list>
     <list default="true" id="673f048b-3bb4-41a3-93d2-66c7144e5b1b" name="changes" comment="List Search, O(n.Log(n)) implmentation.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/binary_search_tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrals.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_1.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_1.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_2.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_2.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku_Solver_Test_3.PNG" afterPath="$PROJECT_DIR$/Sudoku_Solver_Test_3.PNG" />
@@ -37,6 +37,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SudokuSolver.py" afterPath="$PROJECT_DIR$/SudokuSolver.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TreeNode.py" afterPath="$PROJECT_DIR$/TreeNode.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binarySearch.py" afterPath="$PROJECT_DIR$/binarySearch.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binary_search_tree.py" afterPath="$PROJECT_DIR$/binary_search_tree.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bit_play.py" afterPath="$PROJECT_DIR$/bit_play.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bubble_sort.py" afterPath="$PROJECT_DIR$/bubble_sort.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hash_table_impl.py" afterPath="$PROJECT_DIR$/hash_table_impl.py" />
@@ -92,21 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TreeNode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TreeNode.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,15 +167,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="binary_search_tree.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="binary_search_tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/binary_search_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6598891">
-              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="491" column="10" selection-start-line="486" selection-start-column="0" selection-end-line="491" selection-end-column="10" />
               <folding>
                 <element signature="e#81#94#0" expanded="true" />
-                <element signature="e#732#1515#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="integrals.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/integrals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36065573">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -243,12 +243,13 @@
         <option value="$PROJECT_DIR$/sieve_of_eratosthenes.py" />
         <option value="$PROJECT_DIR$/TreeNode.py" />
         <option value="$PROJECT_DIR$/binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/integrals.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1590" />
-    <option name="height" value="860" />
+    <option name="height" value="852" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -282,7 +283,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Work/python/python_play/algorithms/LinkedListTests.py" />
   </component>
-  <component name="RunManager" selected="Python.binary_search_tree">
+  <component name="RunManager" selected="Python.integrals">
     <configuration default="false" name="sieve_of_eratosthenes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -296,23 +297,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sieve_of_eratosthenes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="regex" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -364,6 +348,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binary_search_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="integrals" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/integrals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -528,18 +529,18 @@
       <item index="0" class="java.lang.String" itemvalue="Python.fibinocci" />
       <item index="1" class="java.lang.String" itemvalue="Python.SudokuSover" />
       <item index="2" class="java.lang.String" itemvalue="Python.sieve_of_eratosthenes" />
-      <item index="3" class="java.lang.String" itemvalue="Python.regex" />
-      <item index="4" class="java.lang.String" itemvalue="Python.towerOfHanoi" />
-      <item index="5" class="java.lang.String" itemvalue="Python.TreeNode" />
-      <item index="6" class="java.lang.String" itemvalue="Python.binary_search_tree" />
+      <item index="3" class="java.lang.String" itemvalue="Python.towerOfHanoi" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TreeNode" />
+      <item index="5" class="java.lang.String" itemvalue="Python.binary_search_tree" />
+      <item index="6" class="java.lang.String" itemvalue="Python.integrals" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.binary_search_tree" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TreeNode" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sieve_of_eratosthenes" />
-        <item index="3" class="java.lang.String" itemvalue="Python.towerOfHanoi" />
-        <item index="4" class="java.lang.String" itemvalue="Python.regex" />
+        <item index="0" class="java.lang.String" itemvalue="Python.integrals" />
+        <item index="1" class="java.lang.String" itemvalue="Python.binary_search_tree" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TreeNode" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sieve_of_eratosthenes" />
+        <item index="4" class="java.lang.String" itemvalue="Python.towerOfHanoi" />
       </list>
     </recent_temporary>
   </component>
@@ -662,7 +663,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1590" height="860" extended-state="0" />
+    <frame x="0" y="0" width="1590" height="852" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5089286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -670,7 +671,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24234354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44660193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -754,33 +755,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>217</line>
+          <line>358</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>215</line>
+          <line>356</line>
           <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>254</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>200</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>207</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/binary_search_tree.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -793,18 +774,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="96" />
+      <option name="time" value="112" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tower_of_hanoi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_assert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1065,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="28" selection-start-line="187" selection-start-column="28" selection-end-line="187" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,9 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#33#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,14 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TreeNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recursion_exercises.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1171,14 +1131,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TreeNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/binary_search_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6598891">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="491" column="10" selection-start-line="486" selection-start-column="0" selection-end-line="491" selection-end-column="10" />
           <folding>
             <element signature="e#81#94#0" expanded="true" />
-            <element signature="e#732#1515#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36065573">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

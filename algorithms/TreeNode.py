@@ -24,6 +24,9 @@ class TreeNode:
     def set_value(self, value):
         self.value = value
 
+    def set_key(self, key):
+        self.key = key
+
     def set_left(self, left):
         self.left = left
 
