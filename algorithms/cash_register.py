@@ -48,22 +48,32 @@ def calculate_min_count_change_dynamic(balance_in_pennies, available_coins_list)
 
 def coin_change_tree(balance_in_pennies, available_coins, amount_dict_list):
     #print("++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("Starting for ", balance_in_pennies)
+    print("Starting for", balance_in_pennies)
     #print(available_coins)
     #print(amount_dict_list)
 
+    #available_coins.sort(reverse=True)
     for coin in available_coins:
         balance_after_last_coin = balance_in_pennies - int(coin)
         if balance_after_last_coin is 0:
             amount_dict_list[balance_in_pennies] = 1
+
         if balance_after_last_coin > 0:
+            if balance_after_last_coin not in amount_dict_list:
+                print("Missing {0} in {1}".format(balance_after_last_coin, amount_dict_list))
+                coin_change_tree(balance_after_last_coin, available_coins, amount_dict_list)
             if balance_after_last_coin in amount_dict_list:
                 print("Found {0} in {1}".format(balance_after_last_coin, amount_dict_list))
                 current_coin_count = amount_dict_list[balance_after_last_coin] + 1
-                amount_dict_list[balance_in_pennies] = current_coin_count
+                previous_count = 1000
+                if balance_in_pennies in amount_dict_list:
+                    previous_count = amount_dict_list[balance_in_pennies]
+                if current_coin_count < previous_count:
+                    amount_dict_list[balance_in_pennies] = current_coin_count
+                    print("Updated {0} to {1}".format(balance_in_pennies, current_coin_count))
             else:
-                print("Missing {0} in {1}".format(balance_after_last_coin, amount_dict_list))
-                coin_change_tree(balance_after_last_coin, available_coins, amount_dict_list)
+                raise ValueError("{0} not found in {1}".format(balance_after_last_coin, amount_dict_list))
+
     #print(amount_dict_list)
     if balance_in_pennies in amount_dict_list:
         #print(amount_dict_list)
