@@ -25,7 +25,7 @@ def calculate_change(balance):
                 balance = balance % coin_amount
                 if balance == 0:
                     total_coins_desc += '.'
-                    print(total_coins_desc)
+                    #print(total_coins_desc)
                     return total_coins
                 else:
                     total_coins_desc += ', '
@@ -42,13 +42,13 @@ def calculate_min_count_change_dynamic(balance_in_pennies, available_coins_list)
             if i - coin >= 0:
                 dynamic_index = i - coin
                 dynamic_array[i] = min(dynamic_array[i], dynamic_array[dynamic_index]+1)
-    print(dynamic_array)
+    #print(dynamic_array)
     return dynamic_array[balance_in_pennies]
 
 
 def coin_change_tree(balance_in_pennies, available_coins, amount_dict_list):
     #print("++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("Starting for", balance_in_pennies)
+    #print("Starting for", balance_in_pennies)
     #print(available_coins)
     #print(amount_dict_list)
 
@@ -60,17 +60,17 @@ def coin_change_tree(balance_in_pennies, available_coins, amount_dict_list):
 
         if balance_after_last_coin > 0:
             if balance_after_last_coin not in amount_dict_list:
-                print("Missing {0} in {1}".format(balance_after_last_coin, amount_dict_list))
+                #print("Missing {0} in {1}".format(balance_after_last_coin, amount_dict_list))
                 coin_change_tree(balance_after_last_coin, available_coins, amount_dict_list)
             if balance_after_last_coin in amount_dict_list:
-                print("Found {0} in {1}".format(balance_after_last_coin, amount_dict_list))
+                #print("Found {0} in {1}".format(balance_after_last_coin, amount_dict_list))
                 current_coin_count = amount_dict_list[balance_after_last_coin] + 1
                 previous_count = 1000
                 if balance_in_pennies in amount_dict_list:
                     previous_count = amount_dict_list[balance_in_pennies]
                 if current_coin_count < previous_count:
                     amount_dict_list[balance_in_pennies] = current_coin_count
-                    print("Updated {0} to {1}".format(balance_in_pennies, current_coin_count))
+                    #print("Updated {0} to {1}".format(balance_in_pennies, current_coin_count))
             else:
                 raise ValueError("{0} not found in {1}".format(balance_after_last_coin, amount_dict_list))
 
